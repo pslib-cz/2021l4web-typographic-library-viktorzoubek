@@ -143,6 +143,9 @@ mark, .mark{
 .-bg-dark{
     background-color: var(--c-dark);
 }
+.-inverted{
+    filter: invert();
+}
 
 .-fixed-top{
     position: fixed;
@@ -181,3 +184,66 @@ ol li::before {
     content: counters(num, ".") "." " ";
     color: var(--c-orange);
 }
+
+button, .button, input[type="button"]{
+    padding: 10px 1.5em;
+    margin: 10px;
+    font-size: 0.8em;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 200ms all;
+}
+button:hover, .button:hover, input[type="button"]:hover{
+    background-color: black;
+    color: white;
+}
+.-btn-inverted{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+.-btn-inverted:hover{
+    color: black;
+    background-color: white;
+}
+
+.-btn-orange{
+    color: black;
+    background-color: var(--c-orange);
+    border: 2px solid var(--c-orange);
+}
+.-btn-orange:hover{
+    color: var(--c-orange);
+    background-color: black;
+}
+
+.-btn-orange-inverted{
+    color: var(--c-orange);
+    background-color: black;
+    border: 2px solid var(--c-orange);
+}
+.-btn-orange-inverted:hover{
+    color: black;
+    background-color: var(--c-orange);
+}
+
+
+table{
+    width: 100%;
+    background-color: var(--c-dark);
+}
+th{
+    color: black;
+    background-color: var(--c-orange);
+}
+td{
+    text-align: center;
+    cursor: pointer;
+}
+td:hover{
+    background-color: var(--c-gray);
+}
+
